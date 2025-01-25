@@ -1,8 +1,5 @@
 # FIRE HALL ALGORITHM
 
-## Overview
-The Fire Hall Algorithm is a specialized solution designed to optimize emergency response times and resource allocation for fire departments. This project implements strategic algorithms to determine optimal fire station locations and emergency vehicle routing.
-
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
