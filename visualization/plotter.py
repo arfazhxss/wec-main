@@ -1,3 +1,4 @@
+import os
 import matplotlib.pyplot as plt
 
 class FireHallPlotter:
@@ -8,6 +9,9 @@ class FireHallPlotter:
             2011: '#ff7f0e'   # orange
         }
         self.markers = ['o', 's', '^']
+        
+        # Create maps directory if it doesn't exist
+        os.makedirs('maps', exist_ok=True)
 
     def plot(self, boundary, halls, year, hall_years, radius_in_degrees):
         plt.figure(figsize=(15, 12), dpi=300)
@@ -34,11 +38,11 @@ class FireHallPlotter:
             )
             plt.gca().add_artist(circle)
         
-        plt.title(f'Fire Hall Placement ({year})')
+        plt.title(f'maps/Fire Hall Placement ({year})')
         plt.xlabel('Longitude')
         plt.ylabel('Latitude')
         plt.axis('equal')
         plt.tight_layout()
         
-        plt.savefig(f'fire_hall_optimization_{year}.png')
+        plt.savefig(f'maps/fire_hall_optimization_{year}.png')
         plt.close()
