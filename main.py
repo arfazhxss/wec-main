@@ -2,6 +2,16 @@ from models.optimizer import FireHallOptimizer
 from visualization.plotter import FireHallPlotter
 
 def main():
+    """
+    Main function to analyze fire hall placements over different years.
+    
+    This function reads CSV files containing coordinates for different years,
+    optimizes fire hall placements, calculates coverage, and plots the results.
+    
+    Resources:
+    - FireHallOptimizer: https://example.com/firehalloptimizer
+    - FireHallPlotter: https://example.com/firehallplotter
+    """
     csv_files = [
         (1963, 'assets/coordinates1963.csv'),
         (2005, 'assets/coordinates2005.csv'),
