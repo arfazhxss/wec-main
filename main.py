@@ -7,10 +7,6 @@ def main():
     
     This function reads CSV files containing coordinates for different years,
     optimizes fire hall placements, calculates coverage, and plots the results.
-    
-    Resources:
-    - FireHallOptimizer: https://example.com/firehalloptimizer
-    - FireHallPlotter: https://example.com/firehallplotter
     """
     csv_files = [
         (1963, 'assets/coordinates1963.csv'),
